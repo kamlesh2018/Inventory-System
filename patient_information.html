@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Patient Informartion</title>
+<style type="text/css">
+footer {
+    background-color:#3cb371;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+	 position: fixed;
+      left: 0;
+       bottom: 0;
+      width: 100%;	
+	}
+	header {
+    background-color:#3cb371;
+    color:white;
+    text-align:center;
+      padding:0px;	
+	}
+	body
+{
+background-color:#FFE4E1;
+}
+</style>
+</head>
+<body >
+<header>
+<h1>WELCOME TO HOSPITAL MANAGEMENT SYSTEM</h1><hr>
+</header>
+<hr>
+<h1 align="center">Patient Information</h1><? php echo "hello";?>
+<?
+
+$con=Mysqli_connect("localhost","root","","hospital_management");
+if($con)
+{
+echo "connection sucessful";
+}
+else
+{
+echo "connection not sucessful";
+}
+$query="Select * from patient_registration";
+$select=mysqli_query($con,$query);
+if(select)
+{
+echo "selected";
+}
+mysqli_close($con);
+?>
+<footer>
+Copyright &copy; Kamlesh Kr. Tiwari & Team &trade; SKFGI MANKUNDU - 2019
+</footer>
+</body>
+</html>
